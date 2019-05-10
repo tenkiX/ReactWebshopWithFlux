@@ -1,0 +1,64 @@
+{"order" : [{
+                "customerId": "1",
+                "contactEmail":"yolo@freemail.hu",
+                "address":"swag city",
+                "order": [
+                  {
+                    "shutterType": "Plastic",
+                    "windowHeight": "130",
+                    "windowWidth":"120",
+                    "windowType":"Awning",
+                    "orderedPieces":"2",
+                    "isJobFinished":"false"
+                  },
+                  {
+                    "shutterType": "Wooden",
+                    "windowHeight": "100",
+                    "windowWidth":"100",
+                    "windowType":"Awning",
+                    "orderedPieces":"5",
+                    "isJobFinished":"false"
+                  },
+                  {
+                    "shutterType": "Wooden",
+                    "windowHeight": "150",
+                    "windowWidth":"100",
+                    "windowType":"Awning",
+                    "orderedPieces":"5",
+                    "isJobFinished":"false"
+                  }
+                ]
+              }
+
+  ,
+  {
+    "customerId": "2",
+    "contactEmail":"swaggity@freemail.hu",
+    "address":"yolo city",
+    "order": [
+      {
+        "shutterType": "Steel",
+        "windowHeight": "130",
+        "windowWidth":"120",
+        "windowType":"Awning",
+        "orderedPieces":"2",
+        "isJobFinished":"false"
+      },
+      {
+        "shutterType": "Wooden",
+        "windowHeight": "100",
+        "windowWidth":"100",
+        "windowType":"Awning",
+        "orderedPieces":"5",
+        "isJobFinished":"false"
+      },
+      {
+        "shutterType": "Wooden",
+        "windowHeight": "150",
+        "windowWidth":"100",
+        "windowType":"Awning",
+        "orderedPieces":"5",
+        "isJobFinished":"false"
+      }
+ ]}]}
+
