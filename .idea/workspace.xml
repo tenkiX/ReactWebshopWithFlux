@@ -2,51 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba06387b-7184-47a5-b762-c3135576b2f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sakila-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shuttershop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/ActorActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/MovieActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/StoreActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ActorInformationPanel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CategoryList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MovieForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MovieInformationPanel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MovieList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/RatingList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/StoreDetails.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/StoreList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/constants/ActorConstants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/constants/MovieConstants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/constants/StoreConstants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/dispatcher/SakilaDispatcher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/ActorStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/MovieStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/StoresStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/FilmDAO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/SakilaConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/dao/shutterConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/StoreDAO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/customers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/films.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/mongo-sakila.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/stores.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/JobItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/JobItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ManagerItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ManagerItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ManagerSubItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ManagerSubItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/OrderItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/OrderItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/combined.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/films.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/stores.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/FilmService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/StoreService.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/client/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -63,7 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/ManagerStatistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -72,28 +39,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/md5/md5.js">
+        <entry file="file://$PROJECT_DIR$/client/src/components/JobItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+            <state relative-caret-position="120">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="10" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/orders.json">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Orders.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/shutterService.js">
+        <entry file="file://$PROJECT_DIR$/client/src/components/OrderItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="52" column="64" lean-forward="true" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/pages/Worker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="35" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/ManagerItem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/ManagerSubItem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -112,19 +118,25 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/client/package.json" />
         <option value="$PROJECT_DIR$/client/public/index.html" />
-        <option value="$PROJECT_DIR$/client/src/components/JobItem.js" />
         <option value="$PROJECT_DIR$/dao/shutterDAO.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/database/orders.json" />
         <option value="$PROJECT_DIR$/service/shutterService.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/client/src/App.js" />
+        <option value="$PROJECT_DIR$/client/src/components/JobItem.js" />
+        <option value="$PROJECT_DIR$/client/src/components/ManagerItem.js" />
+        <option value="$PROJECT_DIR$/client/src/components/ManagerSubItem.js" />
+        <option value="$PROJECT_DIR$/client/src/components/pages/Worker.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Orders.js" />
+        <option value="$PROJECT_DIR$/client/src/components/OrderItem.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="229" />
-    <option name="y" value="299" />
-    <option name="width" value="1434" />
-    <option name="height" value="781" />
+    <option name="x" value="338" />
+    <option name="y" value="197" />
+    <option name="width" value="1424" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -135,55 +147,71 @@
         <subPane>
           <expand>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webtech2version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuttershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="webtech2version2" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -227,15 +255,15 @@
       <workItem from="1557506163744" duration="7559000" />
       <workItem from="1557516052561" duration="342000" />
       <workItem from="1557517899849" duration="1581000" />
+      <workItem from="1557560888404" duration="2121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10441000" />
+    <option name="totallyTimeSpent" value="12562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19268559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -303,16 +331,6 @@
     <entry file="file://$PROJECT_DIR$/error.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/JobItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/shutterConstants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -348,40 +366,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/md5/md5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2265">
+          <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/orders.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        <state relative-caret-position="420">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/ManagerStatistics.js">
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="165">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="15" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/md5/md5.js">
+    <entry file="file://$PROJECT_DIR$/service/shutterService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+        <state relative-caret-position="780">
+          <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/shutterService.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/ManagerStatistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="52" column="64" lean-forward="true" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/ManagerSubItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/ManagerItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/pages/Worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/JobItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="10" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Orders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/OrderItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

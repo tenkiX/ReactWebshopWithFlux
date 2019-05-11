@@ -5,7 +5,9 @@ import Table from "react-bootstrap/Table";
 class Orders extends Component {
 
   render() {
-
+    if (!this.props.orders) {
+      return <div />
+    }
     return (<div>
       <Table striped bordered hover>
         <thead>

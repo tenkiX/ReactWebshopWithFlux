@@ -6,6 +6,10 @@ import {Document, Page, Text, View, PDFDownloadLink} from '@react-pdf/renderer';
 class ManagerItem extends Component {
 
     render() {
+        if (!this.props.order.order.order) {
+            return <div />
+        }
+
         return  (<tr><thead>
             <tr>
                 <th>Shutter type</th>

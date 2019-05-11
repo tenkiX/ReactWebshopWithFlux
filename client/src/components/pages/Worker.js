@@ -5,8 +5,6 @@ import axios from "axios";
 import JobItem from "../JobItem";
 import Alert from "react-bootstrap/Alert";
 
-
-
 class Worker extends Component {
     constructor(props) {
         super(props);

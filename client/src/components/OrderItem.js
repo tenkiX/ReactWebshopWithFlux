@@ -4,14 +4,10 @@ import uuid from "uuid";
 class OrderItem extends Component {
 
     render() {
-        var renderThis;
-        try {
-            renderThis=this.props.order.order.order;
-        }catch (e) {
-           // alert("catch");
+        if (!this.props.order.order.order) {
+            return <div />
         }
-
-        return  renderThis.map(orders => (
+        return  this.props.order.order.order.map(orders => (
             <tr key={uuid.v4()}>
                 <td>{orders.shutterType}</td>
                 <td>{orders.windowType}</td>
@@ -23,9 +19,6 @@ class OrderItem extends Component {
 
     }
 }
-
-
-
 
 export default OrderItem;
 

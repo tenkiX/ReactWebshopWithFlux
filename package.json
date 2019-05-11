@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "sudo kill `sudo lsof -t -i:3000` ; node ./bin/www & firefox --new-window http://localhost:3000/",
-    "install": "cd client && npm install && npm run-script build && cd ../database && gnome-terminal -e \"bash -c 'sudo sh mongo-init.sh'\"  && cd .."
+    "start": "cd client && npm run-script build && cd .. && node ./bin/www",
+    "install": "cd client && npm install && cd ../database && gnome-terminal -e \"bash -c 'sudo sh mongo-init.sh'\"  && cd .."
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

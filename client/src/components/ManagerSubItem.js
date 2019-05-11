@@ -7,7 +7,9 @@ class ManagerSubItem extends Component {
     };
 
     render() {
-
+        if (!this.props.order) {
+            return <div />
+        }
 
         return  (
             <tr onClick={this.onTableRowClicked.bind(this)}>
