@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 import Table from "react-bootstrap/Table";
-import axios from "axios";
 import JobItem from "../JobItem";
 import Alert from "react-bootstrap/Alert";
 import OrderStore from "../../store/OrderStore"
@@ -15,30 +14,14 @@ class Worker extends Component {
             orders: null
         };
     }
-  /*  componentWillMount() {
-        this.loadData();
-    }
-    loadData() {
-
-            axios.get(`/listAllOrders`)
-                .then(res => this.setState({ orders: res.data }))
-                .catch(e => {alert(e  + " failed.")});
-        };
-*/
-    finishJob = (dbkey,index) => {
-        axios.post(`/finishJob/${dbkey}/${index}`)
-            .then(res => {alert("job finished"); this.loadData()})
-            .catch(e => {alert(e  + " job finishing failed.")});
-    };
-
 
     onChange(){
         this.setState({orders : OrderStore.orders});
     }
 
     componentDidMount(){
-        OrderActions.listStores();
         OrderStore.addChangeListener(this.onChange);
+        OrderActions.listAllOrders();
     }
 
     componentWillUnmount(){
@@ -51,7 +34,6 @@ class Worker extends Component {
             return <div />
         }
 
-        //van data már
         return (
             <div>
                 <Alert key={0} variant='info'>
@@ -70,7 +52,7 @@ class Worker extends Component {
                     </thead>
                     <tbody>
                     {this.state.orders.map((order) => (
-                        <JobItem key={order._id} order={order} finishJob={this.finishJob}/>
+                        <JobItem key={order._id} order={order} finishJob={OrderActions.updateJob}/>
                     ))}
                     </tbody>
                 </Table>

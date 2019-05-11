@@ -3,8 +3,7 @@ import {EventEmitter} from 'events'
 class OrderStore extends EventEmitter{
 
     orders = [];
-
-
+    activeUserId = "";
 
     emitChange(){
         this.emit('change')

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Button, Form, Col} from "react-bootstrap";
+import OrderActions from "../actions/OrderActions";
+import OrderStore from "../store/OrderStore";
 
 export class AddOrder extends Component {
     state = {
@@ -19,9 +21,10 @@ export class AddOrder extends Component {
             order: []
             };
 
+
     handleSubmit = (e) => {
         e.preventDefault();
-        if (this.props.activeUser==="" || this.props.activeUser === undefined){alert("Please log in first! Type a username in the header and press login"); return;}
+        if (OrderStore.activeUserId ==="" || OrderStore.activeUserId  === undefined){alert("Please log in first! Type a username in the header and press login"); return;}
         const form = e.currentTarget;
         if (form.checkValidity() === false) {
             e.preventDefault();
@@ -53,17 +56,17 @@ export class AddOrder extends Component {
             e.stopPropagation();
             return;
         }
-        if (this.props.activeUser==="" || this.props.activeUser === undefined){alert("Please log in first! Type a username in the header and press login"); return;}
+        if (OrderStore.activeUserId === null || OrderStore.activeUserId ==="" || OrderStore.activeUserId  === undefined){alert("Please log in first! Type a username in the header and press login"); return;}
         if (this.state.addedOrderCounter === 0) {alert('Please add at least 1 item to shopping cart before submitting'); return;}
         let orderData = { order : {
-                customerId: this.props.activeUser,
+                customerId:  OrderStore.activeUserId,
                 contactEmail: this.state.contactEmail,
                 address:this.state.address,
                 order: this.state.order,
                 isInvoiced: "false",
                 isPaid: "false"
             }};
-        this.props.addOrder(orderData);
+        OrderActions.addOrder(orderData);
     };
 
     switchModeToFinalize= (e) => {

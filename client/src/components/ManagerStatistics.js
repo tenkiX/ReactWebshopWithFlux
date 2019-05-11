@@ -30,8 +30,6 @@ class ManagerStatistics extends Component {
     };
 
 
-
-
     render() {
         return (
             <div>

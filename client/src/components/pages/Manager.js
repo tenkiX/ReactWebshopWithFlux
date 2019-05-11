@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
 import Table from "react-bootstrap/Table";
-import axios from "axios";
 import ManagerItem from "../ManagerItem";
+import OrderStore from "../../store/OrderStore"
+import OrderActions from "../../actions/OrderActions";
 
 import uuid from "uuid";
 
 class Manager extends Component {
     constructor(props) {
         super(props);
+        this.onChange = this.onChange.bind(this);
         this.state = {
-            orders: null,
-
+            orders: null
         };
     }
-    componentWillMount() {
-        this.loadData();
-    }
-    loadData() {
 
-        axios.get(`/listAllOrders`)
-            .then(res => this.setState({ orders: res.data }))
-            .catch(e => {alert(e  + " failed.")});
-    };
+    onChange(){
+        this.setState({orders : OrderStore.orders});
+    }
+
+    componentDidMount(){
+        OrderStore.addChangeListener(this.onChange);
+        OrderActions.listAllOrders();
+    }
+
+    componentWillUnmount(){
+        OrderStore.removeChangeListener(this.onChange);
+    }
 
 
 
@@ -29,7 +34,7 @@ class Manager extends Component {
         if (!this.state.orders) {
             return <div />
         }
-        //van data már
+
         return (
             <div>
 

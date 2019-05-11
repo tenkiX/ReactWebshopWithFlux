@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavDropdown, FormControl, Button } from 'react-bootstrap';
-
+import OrderActions from "../../actions/OrderActions";
 import {LinkContainer } from 'react-router-bootstrap'
 
 export class Header extends Component{
@@ -8,21 +8,16 @@ export class Header extends Component{
         activeUserId: "1"
     };
 
-    onActiverUserChanged = (e) => {
+    onActiveUserChanged = (e) => {
         e.preventDefault();
         this.setState({ activeUserId: e.target.value });
    };
 
     onSubmit = (e) => {
         e.preventDefault();
-        let activeUser = this.state;
-        this.props.changeUser(activeUser);
+        OrderActions.userChanged(this.state.activeUserId);
     };
 
-    onListOrders = (e) => {
-        let activeUser = this.state;
-        this.props.listCustomerOrders(activeUser);
-    };
 
 
     render() {
@@ -38,7 +33,7 @@ export class Header extends Component{
                         <NavDropdown.Item >Order shutters</NavDropdown.Item>
                   </LinkContainer>
               <NavDropdown.Divider />
-              <LinkContainer to="/customerOrderList" onClick={this.onListOrders.bind(this)}>
+              <LinkContainer to="/customerOrderList">
                       <NavDropdown.Item >My orders</NavDropdown.Item>
               </LinkContainer>
               </NavDropdown>
@@ -57,7 +52,7 @@ export class Header extends Component{
 
           </Nav>
 
-            <FormControl required type="text" placeholder="Enter your nickname here" className="mr-sm-2" onChange={this.onActiverUserChanged.bind(this)} />
+            <FormControl required type="text" placeholder="Enter your nickname here" className="mr-sm-2" onChange={this.onActiveUserChanged.bind(this)} />
             <Button variant="outline-success" onClick={this.onSubmit.bind(this)}>Login</Button>
 
         </Navbar.Collapse>
