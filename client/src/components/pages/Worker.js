@@ -4,15 +4,18 @@ import Table from "react-bootstrap/Table";
 import axios from "axios";
 import JobItem from "../JobItem";
 import Alert from "react-bootstrap/Alert";
+import OrderStore from "../../store/OrderStore"
+import OrderActions from "../../actions/OrderActions";
 
 class Worker extends Component {
-    constructor(props) {
+   constructor(props) {
         super(props);
+        this.onChange = this.onChange.bind(this);
         this.state = {
             orders: null
         };
     }
-    componentWillMount() {
+  /*  componentWillMount() {
         this.loadData();
     }
     loadData() {
@@ -21,13 +24,26 @@ class Worker extends Component {
                 .then(res => this.setState({ orders: res.data }))
                 .catch(e => {alert(e  + " failed.")});
         };
-
+*/
     finishJob = (dbkey,index) => {
         axios.post(`/finishJob/${dbkey}/${index}`)
             .then(res => {alert("job finished"); this.loadData()})
             .catch(e => {alert(e  + " job finishing failed.")});
     };
 
+
+    onChange(){
+        this.setState({orders : OrderStore.orders});
+    }
+
+    componentDidMount(){
+        OrderActions.listStores();
+        OrderStore.addChangeListener(this.onChange);
+    }
+
+    componentWillUnmount(){
+        OrderStore.removeChangeListener(this.onChange);
+    }
 
 
     render() {
