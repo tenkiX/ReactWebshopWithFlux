@@ -1,64 +1,21 @@
-{"order" : [{
-                "customerId": "1",
-                "contactEmail":"yolo@freemail.hu",
-                "address":"swag city",
-                "order": [
-                  {
-                    "shutterType": "Plastic",
-                    "windowHeight": "130",
-                    "windowWidth":"120",
-                    "windowType":"Awning",
-                    "orderedPieces":"2",
-                    "isJobFinished":"false"
-                  },
-                  {
-                    "shutterType": "Wooden",
-                    "windowHeight": "100",
-                    "windowWidth":"100",
-                    "windowType":"Awning",
-                    "orderedPieces":"5",
-                    "isJobFinished":"false"
-                  },
-                  {
-                    "shutterType": "Wooden",
-                    "windowHeight": "150",
-                    "windowWidth":"100",
-                    "windowType":"Awning",
-                    "orderedPieces":"5",
-                    "isJobFinished":"false"
-                  }
-                ]
-              }
+{
 
-  ,
-  {
-    "customerId": "2",
-    "contactEmail":"swaggity@freemail.hu",
-    "address":"yolo city",
-    "order": [
+  "order" : {
+    "customerId" : "yoloMan",
+    "contactEmail" : "swag@ohyeah.com",
+    "address" : "Swagcity",
+    "order" : [
       {
-        "shutterType": "Steel",
-        "windowHeight": "130",
-        "windowWidth":"120",
-        "windowType":"Awning",
-        "orderedPieces":"2",
-        "isJobFinished":"false"
-      },
-      {
-        "shutterType": "Wooden",
-        "windowHeight": "100",
-        "windowWidth":"100",
-        "windowType":"Awning",
-        "orderedPieces":"5",
-        "isJobFinished":"false"
-      },
-      {
-        "shutterType": "Wooden",
-        "windowHeight": "150",
-        "windowWidth":"100",
-        "windowType":"Awning",
-        "orderedPieces":"5",
-        "isJobFinished":"false"
+        "shutterType" : "Plastic",
+        "windowHeight" : "120",
+        "windowWidth" : "120",
+        "windowType" : "Double hung",
+        "orderedPieces" : "2",
+        "isJobFinished" : "false"
       }
- ]}]}
-
+    ],
+    "isInvoiced" : "false",
+    "isPaid" : "false"
+  },
+  "date" : "2019-05-11T09:46:18.509Z"
+}
