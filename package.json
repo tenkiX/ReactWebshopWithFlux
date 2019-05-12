@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "cd client && npm run-script build && cd .. && node ./bin/www",
-    "install": "cd client && npm install && cd ../database && gnome-terminal -e \"bash -c 'sudo sh mongo-init.sh'\"  && cd ..",
+    "install": "cd client && npm install && cd ..",
     "test": "mocha ./tests"
   },
   "dependencies": {

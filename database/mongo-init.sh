@@ -12,5 +12,4 @@ docker run --detach --network $MONGO_NETWORK_NAME --ip $MONGO_HOST_IP mongo
 
 mongoimport --host $MONGO_HOST_IP --db shuttershop --collection order orders.json
 
-
 mongo --host $MONGO_HOST_IP

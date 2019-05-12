@@ -7,27 +7,15 @@ import OrderActions from "../actions/OrderActions";
 
 class ManagerItem extends Component {
 
- /*   componentDidMount() {
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth()+1; //January is 0!
-        var yyyy = today.getFullYear();
-        if(dd<10){
-            dd='0'+dd
-        }
-        if(mm<10){
-            mm='0'+mm
-        }
-
-        today = yyyy+'-'+mm+'-'+dd;
-        document.getElementById("date-field").setAttribute("value", today);
-        document.getElementById("date-field").setAttribute("min", today);
-    }*/
-
     onDatePickerChanged= (e) => {
+        var GivenDate = e.target.value;
+        var CurrentDate = new Date();
+        GivenDate = new Date(GivenDate);
+        if(GivenDate < CurrentDate){
+            alert('Back to the future is not supported yet, Doc.');
+            return;
+        }
         OrderActions.updateDate(this.props.order._id,e.target.value);
-        //e.preventDefault();
-       // alert("im clicked!");
     };
 
     render() {

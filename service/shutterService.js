@@ -66,4 +66,11 @@ ShutterService.prototype.submitOrder = function(request, success, error){
     this.shutterDAO.createRequest(request, ()=>{success()})
 };
 
+ShutterService.prototype.getShutterTypes = function(callback){
+    this.shutterDAO.getShutterTypes((requests) => {
+        callback(requests)
+    })
+};
+
 module.exports = ShutterService;
+

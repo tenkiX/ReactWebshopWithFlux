@@ -3,8 +3,10 @@ import {Button, Form, Col} from "react-bootstrap";
 import OrderActions from "../actions/OrderActions";
 import OrderStore from "../store/OrderStore";
 
+
 export class AddOrder extends Component {
     state = {
+            shutterTypes: [],
             showFinalizeForm : false,
             activeUser: "",
             addedOrderCounter: 0,
@@ -81,7 +83,17 @@ export class AddOrder extends Component {
         this.setState({showFinalizeForm: true});
     };
 
+    componentDidMount() {
+        fetch('/getShutterTypes',{headers : {
+                "Content-Type" : "application/json", "Accept" : "application/json"
+            }}).then(response =>{ return response.json()})
+            .then(result =>{this.setState({shutterTypes:result});});
+    }
+
     render() {
+        if (!this.state.shutterTypes.material || !this.state.shutterTypes.type) {
+            return <div />
+        }
         return ( <div>
 
                <Form  id = "orderForm" onSubmit={e => this.handleSubmit(e)} style={this.state.showFinalizeForm ? {display: 'none'} : {  }}>
@@ -89,9 +101,9 @@ export class AddOrder extends Component {
                     <Form.Group as={Col} controlId="windowType">
                         <Form.Label>Select window type:</Form.Label>
                         <Form.Control required name="windowType" as="select" onChange={this.onChange}>
-                            <option>Simple</option>
-                            <option>Double hung</option>
-                            <option>Awning</option>
+                            {this.state.shutterTypes.type.map((type) => (
+                                <option>{type}</option>
+                            ))}
                         </Form.Control>
                     </Form.Group>
                     <Form.Group as={Col}/>
@@ -112,9 +124,9 @@ export class AddOrder extends Component {
                     <Form.Group as={Col} controlId="shutterType">
                         <Form.Label>Select shutter type:</Form.Label>
                         <Form.Control required name="shutterType" as="select" onChange={this.onChange}>
-                            <option>Plastic</option>
-                            <option>Steel</option>
-                            <option>Wooden</option>
+                            {this.state.shutterTypes.material.map((mat) => (
+                                <option>{mat}</option>
+                            ))}
                         </Form.Control>
                     </Form.Group>
                     <Form.Group as={Col}/>

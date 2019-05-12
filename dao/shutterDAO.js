@@ -107,12 +107,18 @@ function createRequest(request,callback){
 }
 
 
-
 function calculateRequiredMaterials(shutterType, windowWidth, windowHeight,callback){
 
     var materials = {"material" : shutterType.toLowerCase(),"noOfStaves" : Math.ceil(windowHeight/18), "ofWidth" :  Math.ceil(windowWidth*1.05), "ofLength" :  Math.ceil(windowHeight/11), "fixtures":  Math.ceil(windowHeight/100)};
     callback(materials);
-    return materials; //for tests
+    return materials;
+}
+
+function getShutterTypes(callback){
+
+    var shutterTypes = {"material" : ["Steel", "Plastic", "Wooden"], "type" : ["Simple", "Awning", "Double Hung"]};
+    callback(shutterTypes);
+
 }
 
 function isOrderValid(req){
@@ -144,8 +150,6 @@ function isOrderValid(req){
             return false;
         }
     }
-
-
     return true;
 }
 
@@ -157,5 +161,6 @@ module.exports = {
     "finishJob" : updateJobStatus,
     "getRequiredMaterials" : calculateRequiredMaterials,
     "getStatistics" : getStatistics,
-    "updateDate" : updateDate
+    "updateDate" : updateDate,
+    "getShutterTypes" : getShutterTypes
 };
