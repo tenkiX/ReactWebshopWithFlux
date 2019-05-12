@@ -7,6 +7,7 @@ import Manager from './components/pages/Manager';
 import './App.css';
 import AddOrder from "./components/AddOrder";
 import ManagerStatistics from "./components/ManagerStatistics";
+import Home from "./components/pages/Home";
 
 class App extends Component {
 
@@ -16,7 +17,11 @@ class App extends Component {
                 <div className="App">
                     <div className="container">
                         <Header/>
-
+                        <Route exact path="/" render={props => (
+                            <React.Fragment>
+                                <Home/>
+                            </React.Fragment>
+                        )} />
 
                         <Route path="/customerOrder" render={props => (
                             <React.Fragment>
