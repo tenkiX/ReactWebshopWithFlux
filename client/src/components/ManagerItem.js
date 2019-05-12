@@ -4,18 +4,25 @@ import ManagerSubItem from "./ManagerSubItem";
 import {Document, Page, Text, View, PDFDownloadLink} from '@react-pdf/renderer';
 
 import OrderActions from "../actions/OrderActions";
+import Button from "react-bootstrap/Button";
 
 class ManagerItem extends Component {
+    state = {currentDate:null};
 
-    onDatePickerChanged= (e) => {
-        var GivenDate = e.target.value;
+    onDatePickerSubmitted= () => {
+        if (this.state.currentDate=== null || this.state.currentDate === undefined) {alert("Please pick a valid date first"); return;}
+        var GivenDate = this.state.currentDate;
         var CurrentDate = new Date();
         GivenDate = new Date(GivenDate);
         if(GivenDate < CurrentDate){
             alert('Back to the future is not supported yet, Doc.');
             return;
         }
-        OrderActions.updateDate(this.props.order._id,e.target.value);
+        OrderActions.updateDate(this.props.order._id,this.state.currentDate);
+    };
+
+    onDatePickerChanged= (e) => {
+         this.setState({currentDate: e.target.value})
     };
 
     render() {
@@ -56,7 +63,7 @@ class ManagerItem extends Component {
                 <a href={"mailto:"+this.props.order.order.contactEmail+"?Subject=OrderAtShutterShop&body=We would like to install your shutter."}>   Send Mail</a>
 
             </td>
-                <td>Change installment date:<input type="date" id="date-field" name="install-date" onChange={this.onDatePickerChanged}/></td>
+                <td> <input type="date" id="date-field" name="install-date" onChange={this.onDatePickerChanged}/> <Button variant="outline-dark" size="sm" onClick={this.onDatePickerSubmitted}>Change install date</Button></td>
 
             </tr>
         );
