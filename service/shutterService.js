@@ -63,7 +63,6 @@ ShutterService.prototype.getRequiredMaterials = function(shutterType, windowWidt
 
 
 ShutterService.prototype.submitOrder = function(request, success, error){
-    request['date'] = new Date().toISOString();
     this.shutterDAO.createRequest(request, ()=>{success()})
 };
 

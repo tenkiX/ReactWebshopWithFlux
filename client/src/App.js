@@ -4,7 +4,7 @@ import Header from './components/layout/Header';
 import Orders from './components/Orders';
 import Worker from './components/pages/Worker';
 import Manager from './components/pages/Manager';
-import './App.css';
+import './App.scss';
 import AddOrder from "./components/AddOrder";
 import ManagerStatistics from "./components/ManagerStatistics";
 import Home from "./components/pages/Home";

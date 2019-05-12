@@ -13,9 +13,16 @@
         "windowType" : "Double hung",
         "orderedPieces" : "2",
         "isJobFinished" : "false"
+      },
+      {
+        "shutterType" : "Wooden",
+        "windowHeight" : "100",
+        "windowWidth" : "100",
+        "windowType" : "Awning",
+        "orderedPieces" : "1",
+        "isJobFinished" : "false"
       }
     ],
     "isPaid" : "false"
-  },
-  "date" : "2019-05-11T09:46:18.509Z"
+  }
 }
