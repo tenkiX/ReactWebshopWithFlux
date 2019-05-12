@@ -86,4 +86,15 @@ dispatcher.register((data)=>{
 
 });
 
+dispatcher.register((data)=>{
+    if(data.payload.actionType !== OrderConstants.UPDATE_DATE){
+        return;
+    }
+    axios.post(`/updateDate/${data.payload.payload.dbkey}/${data.payload.payload.date}`)
+        .then(res => {alert("Installment organized successfully");  OrderActions.listAllOrders(); OrderStore.emitChange();})
+        .catch(e => {alert(e  + " organization failed.")});
+
+
+});
+
 export default dispatcher;

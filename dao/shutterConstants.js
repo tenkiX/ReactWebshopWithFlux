@@ -1,25 +1,23 @@
 module.exports = {
     dbName : 'shuttershop',
     collections : {
-        order: {
-            customerId: "2",
-            contactEmail:"yolo",
-            address:"swag",
-            order: [{
-                shutterType: "wooden",
-                windowHeight: "1564",
-                windowWidth:"1",
-                windowType:"basic",
-                orderedPieces:"1",
-                isJobFinished:"false"
-            },
+        order : {
+            customerId : "customerId",
+            contactEmail : "contactEmail",
+            address : "address",
+            installDate:"installDate",
+            order : [
                 {
-                    shutterType: "wooden2",
-                    windowHeight: "1",
-                    windowWidth:"1",
-                    windowType:"nuub",
-                    orderedPieces:"1",
-                    isJobFinished:"false"
-                }],
-        }
+                    shutterType : "shutterType",
+                    windowHeight : "windowHeight",
+                    windowWidth : "windowWidth",
+                    windowType : "windowType",
+                    orderedPieces : "orderedPieces",
+                    isJobFinished : "isJobFinished"
+                }
+            ],
+            isPaid : "false"
+        },
+        date : "date"
 }};
+

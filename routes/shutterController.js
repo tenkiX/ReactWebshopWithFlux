@@ -43,5 +43,10 @@ router.post('/finishJob/:jobId/:index', (req,res) =>{
     shutterService.finishJob(req.params.jobId,req.params.index,() => {res.status(200).send("Request recorded")})
 });
 
+router.post('/updateDate/:dbId/:newDate', (req,res) =>{
+
+    shutterService.updateDate(req.params.dbId,req.params.newDate,() => {res.status(200).send("Request recorded")})
+});
+
 
 module.exports = router;

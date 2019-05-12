@@ -24,7 +24,7 @@ export class AddOrder extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        if (OrderStore.activeUserId ==="" || OrderStore.activeUserId  === undefined){alert("Please log in first! Type a username in the header and press login"); return;}
+        if (OrderStore.activeUserId === null || OrderStore.activeUserId ==="" || OrderStore.activeUserId  === undefined){alert("Please log in first! Type a username in the header and press login"); return;}
         const form = e.currentTarget;
         if (form.checkValidity() === false) {
             e.preventDefault();
@@ -40,6 +40,12 @@ export class AddOrder extends Component {
 
     onChange = (e) => {
         e.persist();
+        this.setState(prevState => ({currentOrder: {...prevState.currentOrder, [e.target.name]: e.target.value}}));
+    };
+
+    onNumericInputChange = (e) => {
+        e.persist();
+        if (e.target.value<1) {alert ("NOPE."); e.target.value=1;}
         this.setState(prevState => ({currentOrder: {...prevState.currentOrder, [e.target.name]: e.target.value}}));
     };
 
@@ -63,8 +69,8 @@ export class AddOrder extends Component {
                 contactEmail: this.state.contactEmail,
                 address:this.state.address,
                 order: this.state.order,
-                isInvoiced: "false",
-                isPaid: "false"
+                isPaid: "false",
+                installDate:"not organized"
             }};
         OrderActions.addOrder(orderData);
     };
@@ -94,11 +100,11 @@ export class AddOrder extends Component {
                 <Form.Row>
                     <Form.Group as={Col} controlId="windowWidth">
                         <Form.Label>Define window width (mm):</Form.Label>
-                        <Form.Control required name="windowWidth" type="number" onChange={this.onChange}/>
+                        <Form.Control required name="windowWidth" type="number" onChange={this.onNumericInputChange}/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="windowHeight">
                         <Form.Label>Define window height (mm):</Form.Label>
-                        <Form.Control required name="windowHeight" type="number" onChange={this.onChange}/>
+                        <Form.Control required name="windowHeight" type="number" onChange={this.onNumericInputChange}/>
                     </Form.Group>
                 </Form.Row>
 
@@ -117,7 +123,7 @@ export class AddOrder extends Component {
                 <Form.Row>
                     <Form.Group as={Col} controlId="orderedPieces">
                         <Form.Label>How many pieces would you like to order?</Form.Label>
-                        <Form.Control required name="orderedPieces" type="number" onChange={this.onChange}/>
+                        <Form.Control required name="orderedPieces" type="number" onChange={this.onNumericInputChange}/>
                     </Form.Group>
                     <Form.Group as={Col}/>
                 </Form.Row>
@@ -135,7 +141,7 @@ export class AddOrder extends Component {
                 <Form.Row>
                     <Form.Group controlId="contactEmail">
                         <Form.Label>Contact e-mail:</Form.Label>
-                        <Form.Control required name="contactEmail" onChange={this.onFinalizeFormChange}/>
+                        <Form.Control required name="contactEmail" type="email" onChange={this.onFinalizeFormChange}/>
                     </Form.Group>
                     <Form.Group controlId="address">
                         <Form.Label>Delivery address:</Form.Label>

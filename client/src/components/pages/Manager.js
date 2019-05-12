@@ -50,8 +50,8 @@ class Manager extends Component {
                         <tr key={uuid.v4()}><td>
                         <Table striped bordered hover responsive>
                             <tbody>
-                            <tr><td>Customer: {order.order.customerId} (shipping address: {order.order.address})</td><td>Contact: {order.order.contactEmail}</td></tr>
-                        <ManagerItem key={order._id} order={order} finishJob={this.finishJob}/>
+                            <tr><td>Customer: {order.order.customerId} (shipping address: {order.order.address})</td><td>Contact: {order.order.contactEmail}</td><td>Install date: {order.order.installDate}</td></tr>
+                            <ManagerItem key={order._id} order={order} finishJob={this.finishJob}/>
 
                             </tbody>
                         </Table></td>

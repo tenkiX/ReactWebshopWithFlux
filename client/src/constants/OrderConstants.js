@@ -3,5 +3,6 @@ module.exports = {
     UPDATE_JOB : 'update-job',
     ADD_ORDER: 'add-order',
     SHOW_ORDERS_BY_USER: 'show-by-user',
-    USER_CHANGED:'user-changed'
+    USER_CHANGED:'user-changed',
+    UPDATE_DATE:'update-date'
 };

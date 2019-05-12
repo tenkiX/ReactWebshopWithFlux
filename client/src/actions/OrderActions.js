@@ -44,6 +44,15 @@ class OrderActions {
             payload : {userName:userName}
         });
     }
+
+    updateDate(dbkey,date){
+        OrderDispatcher.handleViewAction({
+            actionType : OrderConstants.UPDATE_DATE,
+            payload : {
+                dbkey : dbkey,
+                date:date}
+        });
+    }
 }
 
 export default new OrderActions();

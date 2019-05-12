@@ -50,6 +50,22 @@ function updateJobStatus(orderid,index,callback){
     })
 }
 
+function updateDate(orderid,newDate,callback){
+    var client = new MongoClient(url);
+    client.connect((err)=>{
+        assert.equal(null, err);
+        const db = client.db(dbName);
+        const collection= db.collection(collectionName);
+        const query =   { _id: ObjectId(orderid) };
+        const setter = {"order.installDate":newDate};
+        collection.updateOne(query,{$set:setter}, (err,r)=> {
+            if (err) console.log(err);
+            callback();
+            client.close();
+        });
+    })
+}
+
 function readOrdersByCustomerId(customerId,callback){
     readOrders({"order.customerId" : customerId},(result) => {callback(result)})
 }
@@ -140,5 +156,6 @@ module.exports = {
     "listOrdersByCustomerId" : readOrdersByCustomerId,
     "finishJob" : updateJobStatus,
     "getRequiredMaterials" : calculateRequiredMaterials,
-    "getStatistics" : getStatistics
+    "getStatistics" : getStatistics,
+    "updateDate" : updateDate
 };

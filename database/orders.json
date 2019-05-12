@@ -4,6 +4,7 @@
     "customerId" : "yoloMan",
     "contactEmail" : "swag@ohyeah.com",
     "address" : "Swagcity",
+    "installDate":"2019-10-01",
     "order" : [
       {
         "shutterType" : "Plastic",
@@ -14,7 +15,6 @@
         "isJobFinished" : "false"
       }
     ],
-    "isInvoiced" : "false",
     "isPaid" : "false"
   },
   "date" : "2019-05-11T09:46:18.509Z"

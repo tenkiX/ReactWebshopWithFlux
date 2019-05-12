@@ -18,7 +18,7 @@ class ManagerSubItem extends Component {
                 <td>{this.props.order.windowWidth}</td>
                 <td>{this.props.order.windowHeight}</td>
                 <td>{this.props.order.isJobFinished}</td>
-                <td>false</td>
+                <td>{this.props.isPaid}</td>
             </tr>
 
         );

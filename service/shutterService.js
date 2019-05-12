@@ -47,6 +47,12 @@ ShutterService.prototype.finishJob = function(orderId, index, success){
     this.shutterDAO.finishJob(orderId, index, ()=>{success()})
 };
 
+ShutterService.prototype.updateDate = function(orderId, newDate, success){
+
+    this.shutterDAO.updateDate(orderId, newDate, ()=>{success()})
+};
+
+
 ShutterService.prototype.getRequiredMaterials = function(shutterType, windowWidth, windowHeight, callback){
 
     this.shutterDAO.getRequiredMaterials(shutterType, windowWidth, windowHeight, (requests) => {
@@ -58,9 +64,6 @@ ShutterService.prototype.getRequiredMaterials = function(shutterType, windowWidt
 
 ShutterService.prototype.submitOrder = function(request, success, error){
     request['date'] = new Date().toISOString();
-  //  request['sign'] = new md5().update(JSON.stringify({
-  //      order: request['order'],
-  //      date : request['date']})).digest('hex');
     this.shutterDAO.createRequest(request, ()=>{success()})
 };
 
